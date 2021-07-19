@@ -24,7 +24,7 @@ for face in faces:
 	face_image = img[y1:y2,x1:x2,:]
 
 	io.imsave(
-		fname = '/Downloads/face_%02d.jpg'%(i), 
+		fname = '/Downloads/face_%02d_score_%f.jpg'%(i,score), 
 		arr = face_image,
 		)
 	i+=1
