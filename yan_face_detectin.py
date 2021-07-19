@@ -13,7 +13,7 @@ i = 0
 for face in faces:
 	print(face)
 
-	box, landmarks, score = faces
+	box, landmarks, score = face
 
 	x1 = int(box[0])
 	x2 = int(box[2])
