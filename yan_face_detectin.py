@@ -12,17 +12,12 @@ i = 0
 
 for face in faces:
 	print(face)
-
 	box, landmarks, score = face
-
 	x1 = int(box[0])
 	x2 = int(box[2])
-
 	y1 = int(box[1])
 	y2 = int(box[3])
-
 	face_image = img[y1:y2,x1:x2,:]
-
 	io.imsave(
 		fname = '/Downloads/face_%02d_score_%f.jpg'%(i,score), 
 		arr = face_image,
