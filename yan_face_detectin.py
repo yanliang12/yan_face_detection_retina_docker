@@ -1,4 +1,4 @@
-############yan_face_detectin.py############
+#############yan_face_detectin.py############
 from skimage import io
 from face_detection import RetinaFace
 
@@ -13,7 +13,7 @@ i = 0
 for face in faces:
 	print(face)
 
-	box, landmarks, score = faces[0]
+	box, landmarks, score = faces
 
 	x1 = int(box[0])
 	x2 = int(box[2])
